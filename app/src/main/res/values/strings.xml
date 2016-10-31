@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Science Quiz</string>
+    <string name="OlympusMons">Question 1: Olympus Mons is three times the height of Mount Everest. Which planet is it located on?</string>
+    <string name="nickname">Question 2: Which of the following nickname has Schrödinger won for himself due to his well-known thought experiment?</string>
+    <string name="distanceEarthMoon">Question 3: The distance between the Earth Planet and the Moon is</string>
+    <string name="magnetic">Question 4: Who first proposes "if an induced current flows, its magnetic field always opposes the magnetic flux change which produced it"?</string>
+    <string name="fourier">Question 5: Fourier series is proposed by Fourier during which of his study?</string>
+    <string name="natural">Question 6: Which of the following mathematicians do not die naturally (not due to disease)?</string>
+    <string name="submit">Submit</string>
+</resources>

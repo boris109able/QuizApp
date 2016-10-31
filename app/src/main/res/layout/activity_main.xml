@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Single Choice Questions"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+
+        <TextView
+            style="@style/question"
+            android:text="@string/OlympusMons" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/jupiter"
+                    style="@style/answer"
+                    android:text="Jupiter"
+                    android:onClick="clickForFirstQuestion"/>
+                <RadioButton
+                    android:id="@+id/venus"
+                    style="@style/answer"
+                    android:text="Venus"
+                    android:onClick="clickForFirstQuestion"/>
+                <RadioButton
+                    android:id="@+id/mars"
+                    style="@style/answer"
+                    android:text="Mars"
+                    android:onClick="clickForFirstQuestion"/>
+                <RadioButton
+                    android:id="@+id/mercury"
+                    style="@style/answer"
+                    android:text="Mercury"
+                    android:onClick="clickForFirstQuestion"/>
+            </RadioGroup>
+
+        <TextView
+            style="@style/question"
+            android:text="@string/nickname" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/catAbuser"
+                style="@style/answer"
+                android:text="Cat abuser"
+                android:onClick="clickForSecondQuestion"/>
+            <RadioButton
+                android:id="@+id/snakeAbuser"
+                style="@style/answer"
+                android:text="Snake abuser"
+                android:onClick="clickForSecondQuestion"/>
+            <RadioButton
+                android:id="@+id/dogAbuser"
+                style="@style/answer"
+                android:text="Dog abuser"
+                android:onClick="clickForSecondQuestion"/>
+            <RadioButton
+                android:id="@+id/rabbitAbuser"
+                style="@style/answer"
+                android:text="Rabbit abuser"
+                android:onClick="clickForSecondQuestion"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/question"
+            android:text="@string/distanceEarthMoon" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/dist1"
+                style="@style/answer"
+                android:text="38,440km"
+                android:onClick="clickForThirdQuestion"/>
+            <RadioButton
+                android:id="@+id/dist2"
+                style="@style/answer"
+                android:text="30,400km"
+                android:onClick="clickForThirdQuestion"/>
+            <RadioButton
+                android:id="@+id/dist3"
+                style="@style/answer"
+                android:text="384,000km"
+                android:onClick="clickForThirdQuestion"/>
+            <RadioButton
+                android:id="@+id/dist4"
+                style="@style/answer"
+                android:text="384,400km"
+                android:onClick="clickForThirdQuestion"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/question"
+            android:text="@string/magnetic" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/newton"
+                style="@style/answer"
+                android:text="Newton"
+                android:onClick="clickForFourthQuestion"/>
+            <RadioButton
+                android:id="@+id/faraday"
+                style="@style/answer"
+                android:text="Faraday"
+                android:onClick="clickForFourthQuestion"/>
+            <RadioButton
+                android:id="@+id/lenz"
+                style="@style/answer"
+                android:text="Lenz"
+                android:onClick="clickForFourthQuestion"/>
+            <RadioButton
+                android:id="@+id/ampere"
+                style="@style/answer"
+                android:text="Ampere"
+                android:onClick="clickForFourthQuestion"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/question"
+            android:text="@string/fourier" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/quantum"
+                style="@style/answer"
+                android:text="Quantum mechanics"
+                android:onClick="clickForFifthQuestion"/>
+            <RadioButton
+                android:id="@+id/electro"
+                style="@style/answer"
+                android:text="Electromagnetic waves"
+                android:onClick="clickForFifthQuestion"/>
+            <RadioButton
+                android:id="@+id/mechanic"
+                style="@style/answer"
+                android:text="Mechanic vibration"
+                android:onClick="clickForFifthQuestion"/>
+            <RadioButton
+                android:id="@+id/heat"
+                style="@style/answer"
+                android:text="Heat propagation"
+                android:onClick="clickForFifthQuestion"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/heading"
+            android:text="Multiple Choice Questions" />
+        <TextView
+            style="@style/question"
+            android:text="@string/natural"/>
+        <CheckBox
+            android:id="@+id/galois"
+            style="@style/answer"
+            android:text="Évariste Galois"/>
+        <CheckBox
+            android:id="@+id/turing"
+            style="@style/answer"
+            android:text="Alan Turing"/>
+
+        <CheckBox
+            android:id="@+id/abel"
+            style="@style/answer"
+            android:text="Niels Henrik Abel"/>
+        <CheckBox
+            android:id="@+id/archimedes"
+            style="@style/answer"
+            android:text="Archimedes"/>
+
+
+
+        <Button
+            style="@style/answer"
+            android:text="@string/submit"
+            android:onClick="submitAnswer"/>
+
+        <TextView
+            android:id="@+id/standardAnswer"
+            style="@style/analysis"
+            android:text="" />
+
+        <Button
+            style="@style/answer"
+            android:text="Email the answers!"
+            android:onClick="composeEmail"/>
+    </LinearLayout>
+
+
+</ScrollView>
